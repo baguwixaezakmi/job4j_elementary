@@ -11,6 +11,7 @@ public class MinDiapason {
                 min = array[i];
             }
         }
+
         return min;
     }
 }
