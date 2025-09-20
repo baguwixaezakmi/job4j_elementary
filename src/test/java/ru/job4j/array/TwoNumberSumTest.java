@@ -51,10 +51,19 @@ class TwoNumberSumTest {
 
     @Test
     void when2() {
-        int[] array = {1, 5, 3, 7};
+        int[] array = {1, 3, 6, 7};
         int target = 8;
         int[] result = TwoNumberSum.getIndexes(array, target);
-        int[] expected = {1, 2};
+        int[] expected = {0, 3};
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void when3() {
+        int[] array = {1, 2, 5, 9};
+        int target = 100;
+        int[] result = TwoNumberSum.getIndexes(array, target);
+        int[] expected = {};
         assertThat(result).isEqualTo(expected);
     }
 }
