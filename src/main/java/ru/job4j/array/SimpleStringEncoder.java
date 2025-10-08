@@ -10,15 +10,19 @@ public class SimpleStringEncoder {
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
                 counter++;
-
             } else {
-                result += counter > 1 ? "" + symbol + counter : "" + symbol;
+                result += counter > 1
+                    ? "" + symbol + counter
+                    : symbol;
                 symbol = input.charAt(i);
                 counter = 1;
             }
         }
 
-        result += counter > 1 ? "" + symbol + counter : "" + symbol;
+        result += counter > 1
+            ? "" + symbol + counter
+            : symbol;
+
         return result;
     }
 }
