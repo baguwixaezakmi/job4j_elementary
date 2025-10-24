@@ -7,6 +7,7 @@ public class Point {
 
     private int x;
     private int y;
+    private int z;
 
     public Point(int first, int second) {
         this.x = first;
@@ -17,10 +18,7 @@ public class Point {
         return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
     }
 
-    public static void main(String[] args) {
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
-        double distance = a.distance(b);
-        System.out.println(distance);
+    public void info() {
+        System.out.println("Point[" + this.x + ", " + this.y + "]");
     }
 }
