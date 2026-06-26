@@ -1,3 +1,12 @@
+# Скомпилированные файлы
 *.class
 out/
+target/
+
+# Файлы IntelliJ IDEA
+.idea/
 *.iml
+
+# Maven / Gradle
+*.jar
+*.war
